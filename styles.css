@@ -1,0 +1,106 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#level-title {
+  font-size: 3rem;
+  margin: 5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 80%; /* Adjust for responsive design */
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin: 10px;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border: 5px solid black;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+#start-btn {
+  background-color: black;
+  color: wheat;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin: 20px;
+  transition: background-color 0.3s;
+}
+
+#start-btn:hover {
+  background-color: #FEF2BF;
+}
+
+#start-btn:focus {
+  outline: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  #level-title {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .container {
+    width: 90%; /* More width on smaller screens */
+  }
+
+  .btn {
+    height: 80px;
+    width: 80px;
+    margin: 5px;
+  }
+
+  #start-btn {
+    font-size: 1.5rem; /* Smaller start button text */
+    padding: 10px 30px;
+  }
+}
